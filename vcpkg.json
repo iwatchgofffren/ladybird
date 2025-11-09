@@ -35,6 +35,10 @@
       "platform": "linux | freebsd"
     },
     {
+      "name": "pipewire",
+      "platform": "linux"  
+    },
+    {
       "name": "dirent",
       "platform": "windows"
     },
