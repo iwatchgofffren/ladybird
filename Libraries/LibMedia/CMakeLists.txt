@@ -39,6 +39,10 @@ else()
     target_link_libraries(LibMedia PRIVATE ${FFMPEG_LIBRARIES})
 endif()
 
+if (LADYBIRD_AUDIO_BACKEND STREQUAL "PIPEWIRE")
+    target_sources(LibMedia PRIVATE
+        Audio/Pipewire/PipewireAudioWrappers.cpp
+        Audio/Pipewire/PlaybackStreamPipewire.cpp)
 if (LADYBIRD_AUDIO_BACKEND STREQUAL "PULSE")
     target_sources(LibMedia PRIVATE
         Audio/PlaybackStreamPulseAudio.cpp

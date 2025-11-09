@@ -7,6 +7,7 @@ set(CMAKE_CXX_SCAN_FOR_MODULES OFF)
 
 set(CMAKE_COLOR_DIAGNOSTICS ON)
 
+
 macro(add_cxx_compile_options)
     set(args "")
     foreach(arg ${ARGN})
